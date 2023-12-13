@@ -1,0 +1,71 @@
+logging:
+  version: 1
+  disable_existing_loggers: False
+
+  formatters:
+    simple:
+      format: "%(asctime)s %(message)s"
+      datefmt: "%Y-%m-%d %H:%M:%S"
+    error:
+      format: "%(asctime)s %(name)s %(levelname)s %(filename)s::%(funcName)s[%(lineno)d]:%(message)s"
+
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: simple
+      stream: ext://sys.stdout
+
+    info_file_handler:
+      class: logging.handlers.RotatingFileHandler
+      level: INFO
+      formatter: simple
+      filename: wx_info.log
+      maxBytes: 10485760  # 10MB
+      backupCount: 20
+      encoding: utf8
+
+    error_file_handler:
+      class: logging.handlers.RotatingFileHandler
+      level: ERROR
+      formatter: error
+      filename: wx_error.log
+      maxBytes: 10485760  # 10MB
+      backupCount: 20
+      encoding: utf8
+
+  root:
+    level: INFO
+    handlers: [console, info_file_handler, error_file_handler]
+
+groups:
+  enable: [8516051765@chatroom,39182538551@chatroom,34624702894@chatroom,20684253519@chatroom] # 允许响应的群 roomId，大概长这样：2xxxxxxxxx3@chatroom
+
+news:
+  receivers: [wxid_2hlw5d0mkho441] # 定时新闻接收人（roomid 或者 wxid）
+
+report_reminder:
+  receivers: []  # 定时日报周报月报提醒（roomid 或者 wxid）
+
+chatgpt:  # -----chatgpt配置这行不填-----
+  key: sess-IbguB3NQ69DuQBrPtvrVm1JD2hbBycjAthKKV4jA
+  api: https://api.openai.com/v1  # 如果你不知道这是干嘛的，就不要改
+  proxy:  # 如果你在国内，你可能需要魔法，大概长这样：http://域名或者IP地址:端口号
+  prompt: 你是个乐于助人的AI, 叫做K，乐于帮助人们解决问题。 
+
+# chatglm:  # -----chatglm配置这行不填-----
+#   key: sk-012345678901234567890123456789012345678901234567 # 这个应该不用动
+#   api: http://localhost:8000/v1  # 根据自己的chatglm地址修改
+#   proxy:  # 如果你在国内，你可能需要魔法，大概长这样：http://域名或者IP地址:端口号
+#   prompt: 你是智能聊天机器人，你叫小薇  # 根据需要对角色进行设定 
+#   file_path: F:/Pictures/temp  #设定生成图片和代码使用的文件夹路径
+
+# tigerbot:  # -----tigerbot配置这行不填-----
+#   key:  # key
+#   model:  # tigerbot-7b-sft
+
+xinghuo_web:  # -----讯飞星火web模式api配置这行不填 抓取方式详见文档：https://www.bilibili.com/read/cv27066577-----
+  cookie: JSESSIONID=69B7CCDCF1CEB2DA65E1959E75AC96A9; di_c_mti=7cd20328-5a07-6888-a6c1-cb78d0115bf7; d_d_app_ver=1.4.0; d_d_ci=94fc2156-7656-654b-b513-fa4f6805bfcb; ssoSessionId=766ff3a4-cf76-4740-970f-078867882fd4; account_id=17881026781; gr_user_id=42e1946d-7e8c-443f-8f05-daac9140339c; Hm_lvt_83a57cc9e205b0add91afc6c4f0babcc=1700823439; Hm_lvt_fe740601c79b0c00b6d5458d146aa5ef=1700823546; daas_st={%22sdk_ver%22:%221.3.9%22%2C%22status%22:%220%22}; appid=150b4dfebe; gt_local_id=tSwPGvocLd3vZf1byn85osszqSCJ1VVh/VDyeDfMCFLd2a1UuNMIwA==
+  fd: 393845
+  GtToken: RzAwAGP+lltFsaj0S4nRuINUR6DsyNj82+ujU41P5iUwYmqtfdxvtEpSdfxeJJAnRDZXn20LfvRm084/YnILC/fDRvkFYss+tzw8e1GKk19ARx8K+eq+tpFXm6n6tn9IjfTbkJhdT7pfG5eGs50MJA6eel8dyrz36l7KgF+nI5D1u61Idg/0EH0zrq66qKruE/q7GfhKp3x0XmMJDVKjzadNTmcuGFN4088VXigdu/saEMPny51VQ47LLVr51umsqb2kvoLXHr4fytFYGGdmXAsM8Yp+P+Uk3xTdCiT3bbTH0QH6wmJ8MFKeIHUTELxfVGKtWdMfHTyBpOQDQ/XmhIEoXJMpL6ElQNPVKDfQWmZBzf9prekB35GFFNsVdgnd3JPqJts+lVjypokmhkeckvqP0Nze7c35BSizT8bmuYDLswphsDvXlc1+acCmfhww1T2/kfQHksJ8dw1+K+b0y7h9qIKvf+4sUhVC2JkV/lAix+QBxX9I3Q5b0tb12QkhTnI+KMfP09V2SI6z30QKkie0ybyYzraopx9WvmUq7TOXzr02CEOJOQeotG6FZcpMoJ0+JXtwVR7K/FOK490PB4nYISZlbV30vlPRZxLgAPHOsb5pAJLjciXDIwtnRYc7f/soWL+3o+09JJB9prbC4ZRVrbw0qSBYdzSK++WSytjJXZOLrEXBE/rpqdoFdQLaokkXvmJ56bFb2hI5JCXVpsyY/TABOq8TzQEbBfevZzy/TCP3P2aj45AaTCfYuXI1cb8hL/JfUZ2DZ2zYdPunOnFQTj/dK0hX7Zl3XOX1KXzspte2eEpITnOY1mZsTqrLNgtRmSxnSKtmx7+ww/fEZ4knByWFwqOuI4/BwiS3VtkgrTnAZ/nkSWY8a0DUZc0ZzDObU8IxW514x5iWbE8WUOrMBz8fBOAO7B7FydKahIf+qkuI3ndwjwLVU5GQATR7yp3zjmBzXDddcOupucCzU47qTnUUuog9fHq9TpOD8C17gXVWX5UbAFVrO6zvc0Qj/y5sXxupqLaCBPD2iaL9RDunGjODMtAjlupLIdD4Qtu6dlsVby4CdTkwofMar51f1ZKpZGZvGY/n3rvQafmlg0zsOMGglFoAtGgVLYovw2Ddd/mYIPDSQnTc3RMv9trRIJD7nseUWTFjP4kA/MItMH4a8GG2eIixZjQ1cfowxJpNkAXr3XIGvhtFPi7fCdW2Wk734j7i7XO3yj1rjAq+EZjH+tOTIHxZ0hIWfxu0qpjIECgCmQ5em4zXltPsbG/erX9NtvGo7mDXeKwiAbLRu1hGDbZzpVN6X/KbX88m7yaE0VT5NWGFRiyn/k67QSiCVGi37Tx/Eh0zXoEFSoy8kgQqabiEPzbPyyo3Vi8USmeoKYxjO0TD5H8Ph8+aVkGdV6qIgBZJob3XxslRe1UkTId2TrjjVs+v+MBJuk5Iutkr65fdsbAY2N+QGqRHcCrUmnRTcaBH7BmclKuoGUtKFBig0+QSzd9Y2mDaw4rIMFaIobYLM+6qaQRHG+kHg7bAwSTe8ACdocF43MnCB/u3F9FLijVHaI9U4gDgqPIcb5xp4+JqPyuG8GXEu75q4yyIl6D07uaVl/FNKIAuLsgk5t2wnYiDUo3u/B+Xm0FJfLWIRjtVznWv9MN9BfZJodJryLdRSAlNXXojo1pt0TSs9/1OHkIL5/jezPJdSzg6m6YLWzRwNDpWCVN6nle+3AteOA1ifm/1mOWbUxbMuEFHWqQ60rK8X7AcN3k7lz5Mb1MpTq7Hfns2DvzXjZtJjPYYmrlRaOVuzjkZYivChWmR4iWMaoJj2UGIgCeSIRnOCa37jNyBs/AyEpUjvZNVqLUzDjc7+J6axZYKupM+jhrmPuMSIn70oc19r1mdtoRtv2QJHNxDTu9Y0s6JGy19gHxDTx9xxuyefemGb7ebhn2EKjaMaMFE
+  prompt: 你是智能聊天机器人，你叫wcferry。请用这个角色回答我的问题  # 根据需要对角色进行设定

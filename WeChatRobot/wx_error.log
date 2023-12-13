@@ -1,0 +1,200 @@
+2023-12-09 03:18:08,617 traitlets ERROR manager.py::wrapper[89]:No such kernel named chatglm3
+Traceback (most recent call last):
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\manager.py", line 82, in wrapper
+    out = await method(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\manager.py", line 391, in _async_start_kernel
+    kernel_cmd, kw = await ensure_async(self.pre_start_kernel(**kw))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\utils.py", line 30, in wrapped
+    raise e
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\utils.py", line 27, in wrapped
+    return loop.run_until_complete(future)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\nest_asyncio.py", line 90, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\admin\anaconda3\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\manager.py", line 353, in _async_pre_start_kernel
+    self.kernel_spec,
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\manager.py", line 178, in kernel_spec
+    self._kernel_spec = self.kernel_spec_manager.get_kernel_spec(self.kernel_name)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\jupyter_client\kernelspec.py", line 294, in get_kernel_spec
+    raise NoSuchKernel(kernel_name)
+jupyter_client.kernelspec.NoSuchKernel: No such kernel named chatglm3
+2023-12-09 20:21:45,747 Robot ERROR robot.py::innerProcessMsg[181]:Receiving message error: ip_loc() missing 1 required positional argument: 'msg'
+2023-12-09 20:23:10,629 Robot ERROR robot.py::innerProcessMsg[181]:Receiving message error: ip_loc() missing 1 required positional argument: 'msg'
+2023-12-09 20:23:45,207 Robot ERROR robot.py::innerProcessMsg[181]:Receiving message error: ip_loc() missing 1 required positional argument: 'msg'
+2023-12-09 20:25:37,716 Robot ERROR robot.py::innerProcessMsg[182]:Receiving message error: ip_loc() missing 1 required positional argument: 'msg'
+2023-12-09 20:28:30,303 Robot ERROR robot.py::innerProcessMsg[181]:Receiving message error: 'str' object has no attribute 'content'
+2023-12-09 20:30:39,565 Robot ERROR robot.py::innerProcessMsg[181]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:32:22,334 Robot ERROR robot.py::innerProcessMsg[185]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:38:11,913 Robot ERROR robot.py::innerProcessMsg[207]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:39:34,721 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:40:31,698 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:41:12,400 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:43:35,766 Robot ERROR robot.py::innerProcessMsg[210]:Receiving message error: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>
+2023-12-09 20:43:55,334 Robot ERROR robot.py::ip_location[83]:[]
+2023-12-09 20:43:55,335 Robot ERROR robot.py::ip_location[84]:局域网
+2023-12-09 20:43:55,336 Robot ERROR robot.py::ip_location[85]:['192.168.1.1']
+2023-12-09 20:43:55,337 Robot ERROR robot.py::innerProcessMsg[210]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:45:03,476 Robot ERROR robot.py::ip_location[83]:[]
+2023-12-09 20:45:03,477 Robot ERROR robot.py::ip_location[84]:局域网
+2023-12-09 20:45:03,478 Robot ERROR robot.py::ip_location[85]:['192.168.1.1']
+2023-12-09 20:45:03,479 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: list index out of range
+2023-12-09 20:45:52,648 Robot ERROR robot.py::ip_location[83]:[]
+2023-12-09 20:45:52,649 Robot ERROR robot.py::ip_location[84]:局域网
+2023-12-09 20:45:52,651 Robot ERROR robot.py::ip_location[85]:['192.168.1.1']
+2023-12-09 20:45:52,652 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: list index out of range
+2023-12-09 20:46:20,223 Robot ERROR robot.py::ip_location[83]:[]
+2023-12-09 20:46:20,225 Robot ERROR robot.py::ip_location[84]:局域网
+2023-12-09 20:46:20,226 Robot ERROR robot.py::ip_location[85]:['192.168.1.1']
+2023-12-09 20:46:20,227 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: list index out of range
+2023-12-09 20:47:36,838 Robot ERROR robot.py::ip_location[83]:杭州市
+2023-12-09 20:47:36,840 Robot ERROR robot.py::ip_location[84]:浙江省
+2023-12-09 20:47:36,842 Robot ERROR robot.py::ip_location[85]:['125.121.33.222']
+2023-12-09 20:49:41,556 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:50:38,671 Robot ERROR robot.py::innerProcessMsg[209]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:54:20,191 Robot ERROR robot.py::innerProcessMsg[208]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:56:27,128 Robot ERROR robot.py::innerProcessMsg[210]:Receiving message error: can only concatenate str (not "list") to str
+2023-12-09 20:59:37,790 Robot ERROR robot.py::ip_location[91]:局域网
+2023-12-09 21:04:15,171 Robot ERROR robot.py::ip_location[91]:
+2023-12-09 21:15:23,066 Robot ERROR robot.py::innerProcessMsg[225]:Receiving message error: location_send() missing 1 required positional argument: 'msg'
+2023-12-09 21:17:10,111 Robot ERROR robot.py::innerProcessMsg[225]:Receiving message error: location_send() missing 1 required positional argument: 'msg'
+2023-12-09 21:26:18,697 Robot ERROR robot.py::innerProcessMsg[225]:Receiving message error: location_send() missing 1 required positional argument: 'msg'
+2023-12-09 22:46:04,093 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:07:03,163 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:09:02,206 Robot ERROR robot.py::JuPai[70]:http://v.api.aa1.cn/api/api-jupai/index.php?msg=你好
+2023-12-09 23:09:03,633 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:09:03,635 Robot ERROR robot.py::JuPai[72]:-102
+2023-12-09 23:09:04,019 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:10:22,244 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:10:56,830 Robot ERROR robot.py::JuPai[70]:-102
+2023-12-09 23:10:57,242 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:15:28,561 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:16:52,192 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:20:26,208 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-09 23:21:19,118 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:29:39,580 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:36:45,615 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:38:17,161 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你好
+2023-12-10 00:38:18,351 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:42:35,189 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你好
+2023-12-10 00:42:37,835 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:43:50,837 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你好
+2023-12-10 00:43:55,021 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:45:11,532 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你好
+2023-12-10 00:45:14,658 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你好'
+2023-12-10 00:47:17,386 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你
+2023-12-10 00:47:20,010 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你'
+2023-12-10 00:49:09,755 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你
+2023-12-10 00:49:14,940 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你'
+2023-12-10 00:53:08,713 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你
+2023-12-10 00:53:12,574 WCF ERROR client.py::_download_file[318]:网络资源下载失败: [Errno 22] Invalid argument: 'C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\wcferry/.dl/index.php?msg=你'
+2023-12-10 00:57:50,273 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=你
+2023-12-10 01:19:21,643 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=ju
+2023-12-10 01:19:57,486 Robot ERROR robot.py::innerProcessMsg[196]:Receiving message error: list index out of range
+2023-12-10 01:27:23,216 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg= ju
+2023-12-10 01:38:58,702 Robot ERROR robot.py::JuPai[73]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=xml
+2023-12-10 02:30:20,578 Robot ERROR robot.py::innerProcessMsg[218]:Receiving message error: Robot.handle_message() takes 1 positional argument but 2 were given
+2023-12-10 02:31:09,547 Robot ERROR robot.py::innerProcessMsg[218]:Receiving message error: Robot.handle_message() takes 1 positional argument but 2 were given
+2023-12-10 02:33:14,076 Robot ERROR robot.py::innerProcessMsg[218]:Receiving message error: Robot.handle_message() takes 2 positional arguments but 3 were given
+2023-12-10 03:22:47,314 Robot ERROR robot.py::innerProcessMsg[228]:Receiving message error: can only concatenate str (not "int") to str
+2023-12-10 03:37:43,425 Robot ERROR robot.py::innerProcessMsg[228]:Receiving message error: [Errno 11001] getaddrinfo failed
+2023-12-11 11:41:52,880 Robot ERROR robot.py::JuPai[92]:https://v.api.aa1.cn/api/api-jupai/index.php?msg=入冬了，注意保暖！
+2023-12-11 12:04:13,899 Robot ERROR robot.py::innerProcessMsg[279]:Receiving message error: list index out of range
+2023-12-11 12:04:31,133 Robot ERROR robot.py::innerProcessMsg[279]:Receiving message error: list index out of range
+2023-12-11 12:19:34,414 Robot ERROR robot.py::innerProcessMsg[283]:Receiving message error: cannot access local variable 'content' where it is not associated with a value
+2023-12-11 12:21:54,284 Robot ERROR robot.py::innerProcessMsg[283]:Receiving message error: cannot access local variable 'content' where it is not associated with a value
+2023-12-11 12:34:07,713 Robot ERROR robot.py::innerProcessMsg[283]:Receiving message error: cannot access local variable 'content' where it is not associated with a value
+2023-12-12 01:12:33,765 Robot ERROR robot.py::innerProcessMsg[282]:Receiving message error: 'str' object is not callable
+2023-12-12 01:16:00,470 Robot ERROR robot.py::innerProcessMsg[282]:Receiving message error: 'str' object is not callable
+2023-12-12 01:17:57,997 Robot ERROR robot.py::innerProcessMsg[282]:Receiving message error: Search.__init__() missing 1 required positional argument: 'query_type'
+2023-12-12 01:21:47,988 Robot ERROR robot.py::handle_music_directive[102]:userid = wxid_2hlw5d0mkho441
+2023-12-12 01:21:47,990 Robot ERROR robot.py::innerProcessMsg[286]:Receiving message error: can only concatenate str (not "UserSession") to str
+2023-12-12 01:28:53,664 Robot ERROR robot.py::handle_music_directive[102]:userid = wxid_2hlw5d0mkho441
+2023-12-12 01:28:53,667 Robot ERROR robot.py::handle_music_directive[104]:session = <base.session_manager.UserSession object at 0x000002D0D157A050>
+2023-12-12 01:28:53,668 Robot ERROR robot.py::handle_music_directive[105]:session state = INITIAL
+2023-12-12 01:28:53,670 Robot ERROR robot.py::handle_music_directive[110]:song_name = 五环之歌
+2023-12-12 01:28:53,671 Robot ERROR robot.py::innerProcessMsg[288]:Receiving message error: Search.__init__() missing 1 required positional argument: 'query_type'
+2023-12-12 01:50:58,952 Robot ERROR robot.py::handle_music_directive[102]:userid = wxid_2hlw5d0mkho441
+2023-12-12 01:50:58,954 Robot ERROR robot.py::handle_music_directive[104]:session = <base.session_manager.UserSession object at 0x0000027EEBB4AB90>
+2023-12-12 01:50:58,958 Robot ERROR robot.py::handle_music_directive[105]:session state = INITIAL
+2023-12-12 01:50:58,959 Robot ERROR robot.py::handle_music_directive[110]:song_name = 五环之歌
+2023-12-12 01:51:00,731 Robot ERROR robot.py::innerProcessMsg[292]:Receiving message error: can only concatenate str (not "NoneType") to str
+2023-12-12 01:52:57,778 Robot ERROR robot.py::handle_music_directive[102]:userid = wxid_2hlw5d0mkho441
+2023-12-12 01:52:57,780 Robot ERROR robot.py::handle_music_directive[104]:session = <base.session_manager.UserSession object at 0x0000014BC9607C50>
+2023-12-12 01:52:57,781 Robot ERROR robot.py::handle_music_directive[105]:session state = INITIAL
+2023-12-12 01:52:57,784 Robot ERROR robot.py::handle_music_directive[110]:song_name = 五环之歌
+2023-12-12 02:16:46,837 Robot ERROR robot.py::handle_music_directive[108]:点歌session_status = 
+2023-12-12 02:17:03,690 Robot ERROR robot.py::handle_music_directive[125]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 02:17:03,693 Robot ERROR robot.py::innerProcessMsg[298]:Receiving message error: cannot access local variable 'run' where it is not associated with a value
+2023-12-12 02:21:37,764 Robot ERROR robot.py::handle_music_directive[108]:点歌session_status = 
+2023-12-12 02:21:37,766 Robot ERROR robot.py::innerProcessMsg[298]:Receiving message error: None
+2023-12-12 09:12:50,173 Robot ERROR robot.py::innerProcessMsg[298]:Receiving message error: name 'i' is not defined
+2023-12-12 09:42:59,546 Robot ERROR robot.py::innerProcessMsg[302]:Receiving message error: 'Robot' object has no attribute 'ping_ip'
+2023-12-12 09:43:56,330 Robot ERROR robot.py::innerProcessMsg[302]:Receiving message error: can only concatenate str (not "CalledProcessError") to str
+2023-12-12 09:49:16,066 Robot ERROR robot.py::innerProcessMsg[302]:Receiving message error: 'utf-8' codec can't decode byte 0xd5 in position 2: invalid continuation byte
+2023-12-12 10:20:11,297 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: Robot.key_balance() takes 2 positional arguments but 3 were given
+2023-12-12 10:22:39,794 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: Robot.key_balance() takes 2 positional arguments but 3 were given
+2023-12-12 10:26:10,780 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: Robot.key_balance() takes 2 positional arguments but 3 were given
+2023-12-12 10:29:23,194 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: 'Robot' object has no attribute 'get_balance'
+2023-12-12 10:29:58,804 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: ChatGPT.get_balance() missing 1 required positional argument: 'self'
+2023-12-12 10:33:29,589 Robot ERROR robot.py::innerProcessMsg[313]:Receiving message error: type object 'ChatGPT' has no attribute 'conf'
+2023-12-12 10:58:33,383 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: 'Robot' object has no attribute 'chatbot'
+2023-12-12 11:00:09,163 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: 'ChatGPT' object has no attribute 'api_key'
+2023-12-12 11:05:46,795 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: can only concatenate str (not "float") to str
+2023-12-12 11:11:39,151 Robot ERROR robot.py::handle_music_directive[108]:点歌session_status = 
+2023-12-12 11:11:44,155 Robot ERROR robot.py::processMsg[251]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 11:11:44,157 Robot ERROR robot.py::handle_music_directive[125]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 11:11:44,158 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: cannot access local variable 'run' where it is not associated with a value
+2023-12-12 12:21:13,234 Robot ERROR robot.py::processMsg[251]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 12:21:13,242 Robot ERROR robot.py::processMsg[251]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 12:21:13,243 Robot ERROR robot.py::handle_music_directive[125]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 12:21:13,244 Robot ERROR robot.py::innerProcessMsg[312]:Receiving message error: invalid literal for int() with base 10: '<?xml version="1.0"?>\n<msg>\n\t<img aeskey="a255e3744fdf48ebaddb290f0463b895" encryver="1" cdnthumbaeskey="a255e3744fdf48ebaddb290f0463b895" cdnthumburl="3057020100044b304902010002042b50232502032f56
+2023-12-12 12:21:13,246 Robot ERROR robot.py::processMsg[251]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 12:32:38,470 Robot ERROR robot.py::innerProcessMsg[316]:Receiving message error: get_kout_text() missing 1 required positional argument: 'type'
+2023-12-12 12:32:53,226 Robot ERROR robot.py::innerProcessMsg[316]:Receiving message error: get_kout_text() missing 1 required positional argument: 'type'
+2023-12-12 14:08:08,461 Robot ERROR robot.py::innerProcessMsg[388]:Receiving message error: list index out of range
+2023-12-12 14:09:47,812 Robot ERROR robot.py::innerProcessMsg[388]:Receiving message error: HTTPSConnectionPool(host='api.pearktrue.cn', port=443): Max retries exceeded with url: /api/ipport/?ip=60.191.36.147 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2023-12-12 20:33:33,383 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 20:33:38,777 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 20:33:38,779 Robot ERROR robot.py::innerProcessMsg[388]:Receiving message error: cannot access local variable 'run' where it is not associated with a value
+2023-12-12 20:37:42,443 Robot ERROR robot.py::processMsg[323]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 20:48:40,647 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 20:48:45,127 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 20:48:47,677 Robot ERROR robot.py::innerProcessMsg[384]:Receiving message error: 1
+2023-12-12 20:50:54,751 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 20:50:59,084 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 20:51:10,442 Robot ERROR robot.py::innerProcessMsg[384]:Receiving message error: cannot unpack non-iterable NoneType object
+2023-12-12 20:59:56,695 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 21:00:01,673 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:00:06,732 Robot ERROR robot.py::innerProcessMsg[384]:Receiving message error: cannot unpack non-iterable NoneType object
+2023-12-12 21:02:51,453 Robot ERROR robot.py::processMsg[321]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:07:12,433 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 21:07:16,823 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:07:22,547 Robot ERROR robot.py::innerProcessMsg[386]:Receiving message error: Not implemented, yet
+2023-12-12 21:07:55,208 Robot ERROR robot.py::processMsg[323]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:08:57,687 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 21:09:02,885 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:09:42,759 Robot ERROR robot.py::handle_music_directive[170]:点歌session_status = 
+2023-12-12 21:09:48,676 Robot ERROR robot.py::handle_music_directive[187]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:40:34,127 Robot ERROR robot.py::handle_music_directive[110]:点歌session_status = 
+2023-12-12 21:40:44,520 Robot ERROR robot.py::handle_music_directive[130]:选歌session_status = AWAITING_SONG_SELECTION
+2023-12-12 21:45:42,358 Robot ERROR robot.py::processMsg[261]:聊天session_status = AWAITING_SONG_SELECTION
+2023-12-12 23:49:09,926 Robot ERROR robot.py::innerProcessMsg[365]:Receiving message error: name 'sg' is not defined
+2023-12-13 00:46:22,315 Robot ERROR robot.py::innerProcessMsg[367]:Receiving message error: Wcf.invite_chatroom_members() got multiple values for argument 'roomid'
+2023-12-13 00:47:23,457 Robot ERROR robot.py::innerProcessMsg[367]:Receiving message error: Wcf.invite_chatroom_members() got multiple values for argument 'roomid'
+2023-12-13 00:53:59,960 Robot ERROR robot.py::innerProcessMsg[367]:Receiving message error: Wcf.invite_chatroom_members() got multiple values for argument 'roomid'
+2023-12-13 00:56:22,843 Robot ERROR robot.py::innerProcessMsg[367]:Receiving message error: Wcf.invite_chatroom_members() got multiple values for argument 'roomid'
+2023-12-13 01:00:09,309 Robot ERROR robot.py::processMsg[323]:入群
+2023-12-13 01:00:09,320 Robot ERROR robot.py::processMsg[326]:1
+2023-12-13 01:05:39,641 Robot ERROR robot.py::processMsg[323]:入群
+2023-12-13 01:05:39,644 Robot ERROR robot.py::processMsg[326]:1
+2023-12-13 03:04:12,589 Robot ERROR robot.py::toChitchat[190]:猫娘
