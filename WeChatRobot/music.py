@@ -488,7 +488,7 @@ def dl_song(user_id,httpserverpath):
                     </appinfo>
                     <commenturl></commenturl>
             </msg>
-        """.format(title, artist_name, music_url, music_url, img_url, img_url, 'wxid_f5civsvawbn122')
+        """.format(title, artist_name, music_url, music_url, img_url, img_url, 'robot的wxid')
         SessionManager.end_session(user_id)  # 结束会话
         # return xml, img_url
         session.store_data("xml", xml)
