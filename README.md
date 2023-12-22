@@ -25,4 +25,4 @@
 
 
 
-本项目因xml解析功能未开放，不做继续更新，后续合并到新项目wechat-bot中
+本项目因xml解析功能未开放，不做继续更新，后续合并到新项目[wechat-bot](https://github.com/aki66938/wechat-bot)中
